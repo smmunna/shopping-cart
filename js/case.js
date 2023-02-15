@@ -25,6 +25,17 @@ function calculatePrice(productValueCase){
     const caseTotalPrice = productValueCase*200;
     const priceField = document.getElementById('price');
     priceField.innerText = caseTotalPrice;
+
+    const subTotalField = document.getElementById('sub-total');
+    subTotalField.innerText = caseTotalPrice;
+
+    const taxCalculation = caseTotalPrice*1.49;
+
+    const total = document.getElementById('total');
+    total.innerText = taxCalculation;
+
+
+
 }
 
 document.getElementById('increase').addEventListener('click',function(){
